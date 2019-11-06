@@ -1,26 +1,6 @@
 # Base Notebooks for PSTAT Courses
 
-This repository was tested with Ubuntu 18.04 only.
-
-## Docker images
-
-Docker Hub: [https://cloud.docker.com/u/ucsb/repository/docker/ucsb/base-notebooks](https://cloud.docker.com/u/ucsb/repository/docker/ucsb/base-notebooks)
-
-There are three variants:
-
-* **`rstudio`**: [Jupyter Project's r-notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-r-notebook) with following additions:
-    * [`rstudio`](https://www.rstudio.com/products/rstudio/download/preview/)
-    * [`yadm`](https://yadm.io/)
-    * [`nbgitpuller`](https://github.com/jupyterhub/nbgitpuller) ([create puller link](https://jupyterhub.github.io/nbgitpuller/link))
-    * [`jupyter-server-proxy`](https://github.com/jupyterhub/jupyter-server-proxy)
-    * Modified [`jupyter-rsession-proxy`](https://github.com/ucsb-pstat/jupyter-rsession-proxy)
-    * [`jupyterlab-server-proxy`](https://github.com/jupyterhub/jupyter-server-proxy/tree/master/jupyterlab-server-proxy)
-
-* **`scipy`** : [Jupyter Project's scipy-notebook](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook) with following additions:
-    * [`yadm`](https://yadm.io/)
-    * [`nbgitpuller`](https://github.com/jupyterhub/nbgitpuller) ([create puller link](https://jupyterhub.github.io/nbgitpuller/link))
-
-* **`scipy-rstudio`**: a combination of `scipy` and `rstudio`
+This repository was tested with Ubuntu 18.04.
 
 ## Docker-compose Instructions
 
