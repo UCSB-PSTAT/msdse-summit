@@ -2,9 +2,9 @@ version: '3'
 services:
   notebook:
     build:
-      context: ./${IMAGE}
+      context: ./${IMAGE:-base-scipy}
       dockerfile: Dockerfile
-    image: ${IMAGE}:${TAG:-latest}
+    image: ${IMAGE:-base-scipy}:${TAG:-latest}
     volumes:
       - ${PWD}/home:/home/jovyan
       - ${PWD}/keys:/etc/ssl/notebook

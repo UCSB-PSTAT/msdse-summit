@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[ -d home ] || mkdir home
+[ -d home ] || mkdir -m 777 home
 [ -d keys ] || mkdir keys
 
 ## Self-signed certificates can be generated according to
@@ -12,6 +12,8 @@ openssl req -x509 -nodes \
     -keyout keys/mykey.key \
     -out keys/mycert.pem \
     -subj "/C=US/ST=A/L=B/O=C/OU=D/CN=F"
+
+chmod 644 keys/my*
 
 ## The binary at ucsb.box.com (created using pyinstaller) hashes a password according to
 ## https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#preparing-a-hashed-password
