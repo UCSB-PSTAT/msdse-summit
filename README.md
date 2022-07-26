@@ -1,3 +1,5 @@
+**This repo has been deprecated.  Please see our updated [Jupyter](https://github.com/UCSB-PSTAT/jupyter-base) and [RStudio](https://github.com/UCSB-PSTAT/base-rstudio) container image sources instead.**
+
 # Base Notebooks for PSTAT Courses
 
 This repository was tested with Ubuntu 18.04.
